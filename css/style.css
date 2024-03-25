@@ -71,3 +71,33 @@ img{
     right: 0px;
     top: 4px;
 }
+
+.green-bg-left{
+    background-color:green;
+    bottom: 40px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    width: auto;
+    left: 0px;
+    padding: 3px;
+}
+
+.text-items{
+    text-align: left;
+}
+
+.brand{
+    font-size: 12px;
+}
+
+.red-price{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.line-trought{
+    text-decoration: line-through 1px  black;
+    color: black;
+}
