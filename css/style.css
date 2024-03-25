@@ -8,7 +8,24 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header{
+    background-color: rgb(255, 111, 0);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+footer{
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
 /* CLASSI DI LAYOUT */
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -19,16 +36,60 @@ body{
     flex-wrap: wrap;
 }
 
+.col-25{
+    width: 25%;
+
+}
+
+.col-50{
+    width: 50%;
+}
+
 .col-100{
     width: 100%;
-    margin-top: 60px;
 }
 
 .col-33{
-    margin: 50px 15px;
-    width: calc(100% / 3 - 30px);
+    margin: 50px 10px;
+    width: calc(100% / 3 - 20px);
 }
+
+/* FINE CLASSE LAYOUT */
+
+
 /* CLASSI UTILITY */
+
+.logo{
+    width: 95px;
+    display: inline-block;
+    margin-left: 35%;
+}
+
+.logo-inline-block{
+    width: 15px;
+}
+
+.logo-contain{
+    margin-left: 75%;
+    filter: invert(100%);
+}
+
+ul{
+    margin-left: 5%;
+}
+
+ul li{
+list-style-type: none;
+text-align: center;
+display: inline-block;
+color: white;
+font-weight: bold;
+font-size: 12px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
 
 img{
     width: 100%;
@@ -36,6 +97,7 @@ img{
 
 .position-relative{
     position: relative;
+    top: 25px;
 }
 
 .position-absolute{
@@ -46,7 +108,7 @@ img{
     background-color: red;
     width: auto;
     left: 0;
-    bottom: 40px;
+    bottom: 60px;
     font-size: 12px;
     color: white;
     text-align: center;
@@ -55,7 +117,7 @@ img{
 
 .green-bg{
     background-color:green;
-    bottom: 40px;
+    bottom: 60px;
     font-size: 12px;
     color: white;
     text-align: center;
@@ -66,15 +128,21 @@ img{
 
 .hearts{
     width: auto;
-    background-color: white;
     padding: 3px;
-    right: 0px;
-    top: 4px;
+    position: relative;
+    left: 93%;
+    bottom: 500px;
+}
+
+.hearts:hover{
+    padding: 3px;
+    display: inline-block;
+    color: red;
 }
 
 .green-bg-left{
     background-color:green;
-    bottom: 40px;
+    bottom: 60px;
     font-size: 12px;
     color: white;
     text-align: center;
@@ -100,4 +168,41 @@ img{
 .line-trought{
     text-decoration: line-through 1px  black;
     color: black;
+}
+
+.content :hover .main-image{
+    display: none;
+}
+
+.content :hover .hover-image{
+    display: block;
+}
+.hover-image{
+    display: none;
+}
+
+.foot-info-booleano{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.social-info{
+    padding: 0 10px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.social-logo{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 85%;
+    width: 15px;
+    filter: invert(100%);
+}
+
+.margin-left{
+    margin-left: 83%;
 }
