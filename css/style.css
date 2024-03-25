@@ -4,3 +4,70 @@
     box-sizing: border-box;
 
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* CLASSI DI LAYOUT */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-100{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.col-33{
+    margin: 50px 15px;
+    width: calc(100% / 3 - 30px);
+}
+/* CLASSI UTILITY */
+
+img{
+    width: 100%;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.red-bg{
+    background-color: red;
+    width: auto;
+    left: 0;
+    bottom: 40px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+.green-bg{
+    background-color:green;
+    bottom: 40px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    width: auto;
+    left: 38px;
+    padding: 3px;
+}
+
+.hearts{
+    width: auto;
+    background-color: white;
+    padding: 3px;
+    right: 0px;
+    top: 4px;
+}
